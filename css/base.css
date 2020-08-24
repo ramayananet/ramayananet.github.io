@@ -46,7 +46,7 @@ a {
 {
 	position: right;
 	border-bottom-style: solid;
-	border-bottom-width: 0.1vw;
+	border-bottom-width: 2px;
 	border-bottom-color: rgb(0, 0, 0);
 }
 
@@ -61,7 +61,7 @@ a:focus {
 
 .menu {
 	border-bottom-style: solid;
-	border-bottom-width: 0.1vw;
+	border-bottom-width: 2px;
 	border-bottom-color: black;
 
 	
@@ -89,7 +89,7 @@ a:focus {
 	display: inline-block;
 	cursor: crosshair;
 	position: relative;
-	-webkit-text-stroke: 0.1vw rgb(0, 0, 255);
+	-webkit-text-stroke: 0.3vw rgb(0, 0, 255);
 	text-stroke: 1.5px rgb(255, 255, 255);
 	-webkit-text-fill-color: transparent;
 	text-fill-color: rgb(0, 255, 0);

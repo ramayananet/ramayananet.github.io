@@ -11,9 +11,9 @@
 body {
 	margin: 10px;
 	--color-text: rgb(0, 0, 0);
-	--color-bg: #ffffff;
+	--color-bg: #ffd000;
 	--color-link: #000000;
-	--color-link-hover: rgb(0, 255, 0);
+	--color-link-hover: rgb(255, 0, 0);
 	color: var(--color-text);
 	background-color: var(--color-bg);
 	-webkit-font-smoothing: antialiased;
@@ -22,17 +22,6 @@ body {
 }
 
 
-
-main::before {
-	
-	content: '';
-	height: 50%;
-	left: 50%;
-	opacity: 0.6;
-	position: sticky;
-	top: -100%;
-	width: 100%;
-}
 
 @keyframes grain {
   0%, 100% { transform:translate(0, 0); }
@@ -53,63 +42,47 @@ a {
 	outline: none;
 }
 
+#bio
+{
+	position: right;
+	border-bottom-style: solid;
+	border-bottom-width: 0.1vw;
+	border-bottom-color: rgb(0, 0, 0);
+}
+
 a:hover,
 a:focus {
 	color: var(--color-link-hover);
 	outline: none;
 }
 
-.frame {
-	padding: 3rem 5vw;
-	text-align: center;
-	position: relative;
-	z-index: 1000;
-	line-height: 1;
-}
 
-.frame__title {
-	font-size: 1rem;
-	margin: 0 0 1rem;
-	font-weight: 700;
-}
 
-.frame__links {
-	display: inline;
-}
-
-.frame__links a:not(:last-child),
-.frame__demos a:not(:last-child) {
-	margin-right: 1rem;
-}
-
-.frame__demos {
-	margin: 1rem 0;
-}
-
-.frame__demo--current,
-.frame__demo--current:hover {
-	color: var(--color-text);
-}
 
 .menu {
+	border-bottom-style: solid;
+	border-bottom-width: 0.1vw;
+	border-bottom-color: black;
+
+	
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-	padding: 1vh 0 1vh;
+
 	--marquee-width: 100%;
 	--offset: 1vw;
 	--move-initial: calc(-25% + var(--offset));
 	--move-final: calc(-50% + var(--offset));
-	--item-font-size: 8vw;
+	--item-font-size: 9vw;
 	counter-reset: menu;
 }
 
 .menu__item {
 	cursor: crosshair;
 	position: relative;
-	padding: 0 5vw;
+	padding: none;
 }
 
 .menu__item-link {
@@ -144,8 +117,8 @@ a:focus {
 
 .menu__item-link:hover + .menu__item-img {
 	opacity: 1;
-	transform: translate3d(calc(-100% - 6vw),-30%,0) rotate3d(0,0,1,4deg);
-	transition: all 0.4s;
+	transform: translate3d(calc(-100% - 6vw),-30%,0) rotate3d(0,0,1,20deg);
+	transition: all 0.7s;
 }
 
 
@@ -184,9 +157,9 @@ a:focus {
 .marquee span {
 	white-space: nowrap;
 	font-size: var(--item-font-size);
-	padding: 0 1vw;
+	padding: none;
 	font-weight: 900;
-	line-height: 1.15;
+	line-height: 1.2;
 }
 
 .marquee span {
